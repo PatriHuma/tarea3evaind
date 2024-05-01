@@ -1,0 +1,116 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap');
+
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: "Playfair Display", serif;
+}
+
+
+header{
+
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    padding: 15px 100px;
+    justify-content: space-between;
+}
+
+body {
+    background-image: url(img/silla.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+    
+
+.menu {
+    text-align: center;
+    list-style: none;
+    position: absolute;
+   margin-left: 750px;
+    }
+
+nav a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 15px;
+}
+
+nav li {
+        display: inline-block;
+        border: 1px solid black;
+        width: 150px;
+        background: gray;
+        margin: -2px;
+        text-align: center;
+        
+ }
+
+nav li:hover {
+       
+    opacity: 0.5;
+    transition: 1ms;
+
+            }
+
+div .presentacion {
+    
+    width:100%;
+    justify-content: space-between;
+    padding-left: 950px;
+    padding-top: 300px;
+    color: white;
+    font-size: x-large;
+    align-items: center;
+    
+    
+}
+
+.pie{
+position: absolute;
+bottom: 0px;
+margin: 20px;
+display: flex;
+font-size: small;
+
+}
+
+.redes{
+position: absolute;
+display: inline-block;
+align-items: center;
+margin-left: 50px;
+justify-content: space-between;
+padding: 0px 15px;
+list-style: none;
+
+
+}
+
+.redes img {
+    
+    width: 45px;
+    height: 45px;
+    
+}
+
+.redes li {
+
+    padding: 5 px;
+    
+}
+
+
+
+
+

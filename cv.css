@@ -1,0 +1,158 @@
+header{
+
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    padding: 15px 100px;
+    justify-content: space-between;
+}
+
+.menu {
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    margin-left: 750px;
+    }
+
+nav a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 15px;
+}
+
+nav li {
+        display: inline-block;
+        border: 1px solid black;
+        width: 150px;
+        background: gray;
+        margin: -2px;
+        text-align: center;
+        
+ }
+
+nav li:hover {
+       
+    opacity: 0.5;
+    transition: 1ms;
+
+            }
+
+section {
+    max-width: 1750px;
+    margin-top: 50px;
+    
+}
+
+.experiencia {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.experiencia1 {
+    padding: 32px 64px;
+    border-top: 10px solid blueviolet;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    max-width: 100%;
+    min-height: 250px;
+    align-items: center;
+    margin: 50px 40px 30px 40px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s;
+    text-align: justify;
+    /*Para que no se sobresalga el texto del recuadro de la noticia cuando éste sea más grande*/
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*Gira 180º la caja desde su eje Y*/
+.experiencia1:hover {
+    transform: rotateY(180deg);
+}
+
+.experiencia1 p {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: whitesmoke;
+    font-size: 18px;
+
+    /*Información sacada de recursos de internet con el objetivo de conseguir una animación
+    que pudiera funcionar como tarjeta de doble cara para hacer más dinámicas las noticias. Está
+    en negativo para que no aparezca el texto invertido y el translate permite que el contenido aparezca
+    centrado en el eje de la caja y no desperdigado por la página*/
+    transform: translate(-50%, -50%) rotateY(-180deg); 
+}
+
+
+.experiencia1:hover p {
+    display: block; 
+}
+
+.img1, 
+.img2, 
+.img3
+{
+    width: 325px;
+    max-width: 130%;
+    height: 300px;
+}
+
+/*La opacidad al 0 ha sido necesaria para que al girar la caja el contenido previo no se siguiera mostrando*/
+.experiencia1:hover .img1,
+.experiencia1:hover .img2,
+.experiencia1:hover .img3,
+
+.experiencia1:hover .titulos {
+opacity: 0; 
+}
+
+.experiencia1:hover h2 {
+opacity: 0;
+}
+
+h1{
+
+margin-top: 75px;
+margin-left: 15px;
+opacity: 0.8;
+}
+
+
+.pie{
+    position: absolute;
+    bottom: 0px;
+    margin: 20px;
+    display: flex;
+    font-size: small;
+    
+    }
+
+    
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+} 
+    .img1, 
+    .img2, 
+    .img3 
+   {
+        height: 190px;
+        min-height: 190px;
+        width: 280px;
+        min-width: 280px;
+        margin-bottom: 20px;
+    }
+    
+   
